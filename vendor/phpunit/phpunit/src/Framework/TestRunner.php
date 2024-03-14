@@ -37,7 +37,6 @@ use PHPUnit\Util\GlobalState;
 use PHPUnit\Util\PHP\AbstractPhpProcess;
 use ReflectionClass;
 use SebastianBergmann\CodeCoverage\Exception as OriginalCodeCoverageException;
-use SebastianBergmann\CodeCoverage\InvalidArgumentException;
 use SebastianBergmann\CodeCoverage\StaticAnalysisCacheNotConfiguredException;
 use SebastianBergmann\CodeCoverage\UnintentionallyCoveredCodeException;
 use SebastianBergmann\Invoker\Invoker;
@@ -60,8 +59,8 @@ final class TestRunner
 
     /**
      * @throws \PHPUnit\Runner\Exception
+     * @throws \SebastianBergmann\CodeCoverage\InvalidArgumentException
      * @throws CodeCoverageException
-     * @throws InvalidArgumentException
      * @throws MoreThanOneDataSetFromDataProviderException
      * @throws UnintentionallyCoveredCodeException
      */
@@ -173,8 +172,6 @@ final class TestRunner
                         $test->valueObjectForEvents(),
                         $cce->getMessage(),
                     );
-
-                    $append = false;
                 }
             }
 
@@ -420,13 +417,12 @@ final class TestRunner
     private function runTestWithTimeout(TestCase $test): bool
     {
         $_timeout = $this->configuration->defaultTimeLimit();
-        $testSize = $test->size();
 
-        if ($testSize->isSmall()) {
+        if ($test->size()->isSmall()) {
             $_timeout = $this->configuration->timeoutForSmallTests();
-        } elseif ($testSize->isMedium()) {
+        } elseif ($test->size()->isMedium()) {
             $_timeout = $this->configuration->timeoutForMediumTests();
-        } elseif ($testSize->isLarge()) {
+        } elseif ($test->size()->isLarge()) {
             $_timeout = $this->configuration->timeoutForLargeTests();
         }
 
