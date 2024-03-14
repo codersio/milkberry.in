@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaFacebookF, FaTwitter } from "react-icons/fa6";
+
+import { FaYoutube } from "react-icons/fa";
 
 
 const Header = () => {
@@ -20,13 +23,13 @@ const Header = () => {
                         <div className="col-md-6 text-center text-lg-right">
                             <div className="d-inline-flex align-items-center">
                                 <a className="text-white px-3" href>
-                                    <i className="fab fa-facebook-f" />
+                                    <FaFacebookF />
                                 </a>
                                 <a className="text-white px-3" href>
-                                    <i className="fab fa-twitter" />
+                                    <FaTwitter />
                                 </a>
                                 <a className="text-white px-3" href>
-                                    <i className="fab fa-linkedin-in" />
+                                    <FaYoutube />
                                 </a>
                                 <a className="text-white px-3" href>
                                     <i className="fab fa-instagram" />

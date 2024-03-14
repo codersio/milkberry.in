@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                     <div className="col-lg-4" style={{ minHeight: '400px' }}>
                         <div className="position-relative h-100 rounded overflow-hidden">
-                            <img className="position-absolute w-100 h-100" src="img/about.jpg" style={{ objectFit: 'cover' }} />
+                            <img className="position-absolute w-100 h-100" src="https://demo.htmlcodex.com/1362/ice-cream-shop-website-template/img/about.jpg" style={{ objectFit: 'cover' }} />
                         </div>
                     </div>
                     <div className="col-lg-4 py-5">

@@ -1,5 +1,7 @@
 import React from 'react'
+import { FaFacebookF, FaTwitter } from "react-icons/fa6";
 
+import { FaYoutube } from "react-icons/fa";
 
 const Team = () => {
     return (<div className="container-fluid py-5">
@@ -21,9 +23,21 @@ const Team = () => {
                                 <h3 className="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
                                 <h6 className="text-uppercase text-muted mb-4">Designation</h6>
                                 <div className="d-flex justify-content-center pt-1">
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-twitter" /></a>
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-facebook-f" /></a>
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-linkedin-in" /></a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaFacebookF />
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaTwitter />
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaYoutube />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -35,9 +49,21 @@ const Team = () => {
                                 <h3 className="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
                                 <h6 className="text-uppercase text-muted mb-4">Designation</h6>
                                 <div className="d-flex justify-content-center pt-1">
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-twitter" /></a>
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-facebook-f" /></a>
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-linkedin-in" /></a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaFacebookF />
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaTwitter />
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaYoutube />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -49,9 +75,21 @@ const Team = () => {
                                 <h3 className="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
                                 <h6 className="text-uppercase text-muted mb-4">Designation</h6>
                                 <div className="d-flex justify-content-center pt-1">
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-twitter" /></a>
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-facebook-f" /></a>
-                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-linkedin-in" /></a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaFacebookF />
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaTwitter />
+                                        </div>
+                                    </a>
+                                    <a className="btn btn-outline-secondary btn-social mr-2" href="#">
+                                        <div className='icon w-full h-full grid place-items-center'>
+                                            <FaYoutube />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaFacebookF, FaTwitter } from "react-icons/fa6";
+
+import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (<div className="container-fluid footer bg-light py-5" style={{ marginTop: '90px' }}>
@@ -10,10 +13,21 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="col-12 mb-4">
-                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-twitter" /></a>
-                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-facebook-f" /></a>
-                    <a className="btn btn-outline-secondary btn-social mr-2" href="#"><i className="fab fa-linkedin-in" /></a>
-                    <a className="btn btn-outline-secondary btn-social" href="#"><i className="fab fa-instagram" /></a>
+                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                        <div className='icon w-full h-full grid place-items-center'>
+                            <FaFacebookF />
+                        </div>
+                    </a>
+                    <a className="btn btn-outline-secondary btn-social mr-2 grid place-items-center" href="#">
+                        <div className='icon w-full h-full grid place-items-center'>
+                            <FaTwitter />
+                        </div>
+                    </a>
+                    <a className="btn btn-outline-secondary btn-social mr-2" href="#">
+                        <div className='icon w-full h-full grid place-items-center'>
+                            <FaYoutube />
+                        </div>
+                    </a>
                 </div>
                 <div className="col-12 mt-2 mb-4">
                     <div className="row">
